@@ -1,0 +1,21 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "12fe61275734cf8d2554d5f92af20ccb22479118b36a9a56a275ad3f4b1e13fb"
+metafile = true
+
+[[files]]
+file = "mods/modern-lucky-block.pw.toml"
+hash = "bf573e98931f30394e8bde4a0dc3e490a198fc01dfd7e7380354748ea237596b"
+metafile = true
+
+[[files]]
+file = "mods/replaymod.pw.toml"
+hash = "fd9137bffcc88e45daaa3022f661438561d48ef36905c2042db216a685281295"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "7d91ff66190d7ff44803210df8b6f832f5e4c8e1b3346414d04c162dba1b840e"
+metafile = true

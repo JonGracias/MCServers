@@ -1,0 +1,13 @@
+name = "Modern Lucky Block"
+filename = "lucky_block-fabric-0.2.0+1.21.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rfMJRd3C/versions/Z8FXuLVV/lucky_block-fabric-0.2.0%2B1.21.5.jar"
+hash-format = "sha512"
+hash = "b8109451d86cdc52ed9aa153a566e45dcfd8a679e0c16bd5b426831ec9ccd4b4126aac2a0f9568662227c1936fae7409a602c97c80c15a580349e35a4188797b"
+
+[update]
+[update.modrinth]
+mod-id = "rfMJRd3C"
+version = "Z8FXuLVV"

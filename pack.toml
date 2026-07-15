@@ -1,0 +1,13 @@
+name = "Lucky Blocks"
+author = "Jon"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "9c137c581d23a0e87d260a9c2533d993f788cb7fa55d86111e7ad8df0400fda0"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "1.21.5"
