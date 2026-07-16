@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "CLAUDE.md"
-hash = "8d75031503f6de4a86d60a982352bdecb72707988e7488f83b65502e72fea223"
-
-[[files]]
-file = "SETUP.md"
-hash = "b743de525884bd07bff8aa9a230453f55b0b82bf347f2b8c9dec9ee540b758ff"
-
-[[files]]
 file = "addons/modern-lucky-block-0.2.1+1.21.4.zip"
 hash = "9311966a6dc7bc0d7a02b8ebf9d2929a97c60c33ed17a3e8cc4c81c3bdb6546e"
 
