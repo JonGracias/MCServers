@@ -22,7 +22,7 @@ Lucky Block loads it from the game dir's `addons/` folder (NOT `mods/`, NOT worl
 datapacks). It's stored in the pack as a plain file override so packwiz-installer
 delivers it to server and clients alike. The 0.2.1+1.21.4 build covers MC 1.21.4-1.21.8.
 
-### ⚠ This zip carries two LOCAL PATCHES — do not re-download without re-applying
+### ⚠ This zip carries three LOCAL PATCHES — do not re-download without re-applying
 
 1. **Recipe format fix** (`data/lucky/recipe/lucky_block.json`): upstream uses the
    pre-1.21.5 `{"item": "..."}` key format which 1.21.5 rejects ("Couldn't parse data
@@ -35,7 +35,12 @@ delivers it to server and clients alike. The 0.2.1+1.21.4 build covers MC 1.21.4
    outcomes default to ~1 — so ~99% of rolls were TNT bats/pearls. Patched by deleting
    the `chance` field from those three files.
 
-Both patches are separate commits in this repo's git history. Before updating the addon,
+3. **Item model definition** (`assets/lucky/items/lucky_block.json`, ADDED): MC 1.21.4+
+   requires item model definitions in `assets/<ns>/items/`; the addon only ships the old
+   `models/item/` file, so the item icon rendered as the magenta/black missing texture.
+   Added `{"model": {"type": "minecraft:model", "model": "lucky:block/lucky_block"}}`.
+
+All patches are separate commits in this repo's git history. Before updating the addon,
 check whether upstream fixed both; otherwise re-apply (edit JSON inside the zip, then
 `packwiz refresh` + commit).
 
