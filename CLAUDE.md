@@ -74,24 +74,42 @@ read it as a shortcut but should still trust the checks above over the file.
 4. **If Prism was open during any of this**: user must fully quit and reopen Prism
    (it caches instance configs in memory and writes stale ones back).
 
-5. **Done.** User presses Play → pre-launch hook downloads all mods from the local clone.
+5. **Auto-join instances (optional but recommended).** A pack can have multiple tiles,
+   one per server, that connect automatically on launch. Create an additional instance
+   folder (e.g. "Lucky Block PVP") exactly as above, plus two lines in `instance.cfg`:
+   ```ini
+   JoinServerOnLaunch=true
+   JoinServerOnLaunchAddress=10.0.0.172:25566
+   ```
+   For the `lucky-blocks` pack, create BOTH tiles: **"Lucky Blocks"** (auto-join
+   `10.0.0.172:25565`) and **"Lucky Block PVP"** (auto-join `10.0.0.172:25566`).
+   They share the pack, so mods stay identical; each keeps its own settings and
+   ReplayMod recordings. If one instance already exists, copy its `.minecraft\options.txt`
+   into the new one so the user's keybinds/settings carry over.
+
+6. **Done.** User presses Play → pre-launch hook downloads all mods from the local clone.
    Tell the user: after Jon announces any pack change, run `git -C C:\MCServers pull`
    (or ask you to) before launching.
 
-## Joining Jon's server
+## Joining Jon's servers
 
-- Address: `10.0.0.172` (Jon's laptop, home Wi-Fi, DHCP — if unreachable, ask Jon to
-  re-check his IP and that the server is running).
-- The user's username must be whitelisted there first (rule 1 covers collecting it).
-- Multiplayer → Add Server → done once, persists.
+Jon's laptop hosts on `10.0.0.172` (home Wi-Fi, DHCP — if unreachable, ask Jon to
+re-check his IP and that the server is running). Two servers, same pack:
+
+| Server | Address | What it is |
+|---|---|---|
+| Lucky Blocks (Survival) | `10.0.0.172:25565` | survival world with lucky blocks |
+| Lucky Block PVP Arena | `10.0.0.172:25566` | Lucky Block Walls arena: open your team's wall of lucky blocks for gear, fight in the middle |
+
+- The user's username must be whitelisted (per server) first — rule 1 covers collecting it.
 - Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in
-  the pack and work automatically.
+  the pack and work automatically on both.
 
 ## Packs in this repo
 
-| Folder | Display name | MC / loader | Docs |
+| Folder | Display name(s) | MC / loader | Docs |
 |---|---|---|---|
-| `lucky-blocks` | Lucky Blocks | 1.21.5 / Fabric 0.19.3 | [lucky-blocks/CLAUDE.md](lucky-blocks/CLAUDE.md) |
+| `lucky-blocks` | Lucky Blocks + Lucky Block PVP (two instances, one pack) | 1.21.5 / Fabric 0.19.3 | [lucky-blocks/CLAUDE.md](lucky-blocks/CLAUDE.md) |
 
 Adding a new pack (done on Jon's machine): create `<folder>\` with packwiz
 (`packwiz init`), add mods, add a `CLAUDE.md`, extend `.packwizignore` pattern
