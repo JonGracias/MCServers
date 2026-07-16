@@ -67,7 +67,11 @@ Prerequisites the user must have: a Microsoft account that **owns Minecraft Java
    opped (Jon/Datakin) runs `/whitelist add <name>` in-game, or Claude on Jon's machine
    updates it.
 
-8. **Connect**: Multiplayer → Add Server → address `10.0.0.172` (Jon's laptop on home
+8. **Staying up to date**: the pre-launch hook syncs from the LOCAL clone, so when the
+   pack changes upstream, run `git pull` in the clone folder before launching. If mods
+   seem out of date or textures break after Jon announces a fix, pull first.
+
+9. **Connect**: Multiplayer → Add Server → address `10.0.0.172` (Jon's laptop on home
    Wi-Fi as of 2026-07-16 — it's DHCP, so if connection fails ask Jon's Claude to
    re-check with `Get-NetIPAddress`). The server must be running on Jon's laptop.
    - If the server is up but unreachable from another machine, Windows Firewall on
