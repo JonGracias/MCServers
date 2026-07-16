@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "addons/modern-lucky-block-0.2.1+1.21.4.zip"
-hash = "9311966a6dc7bc0d7a02b8ebf9d2929a97c60c33ed17a3e8cc4c81c3bdb6546e"
+hash = "4f4cf1c86c4db231c343a5461da1d964cb0d429fe8aa755838fdd95b8642318c"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"

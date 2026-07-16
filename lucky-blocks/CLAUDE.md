@@ -22,7 +22,7 @@ Lucky Block loads it from the game dir's `addons/` folder (NOT `mods/`, NOT worl
 datapacks). It's stored in the pack as a plain file override so packwiz-installer
 delivers it to server and clients alike. The 0.2.1+1.21.4 build covers MC 1.21.4-1.21.8.
 
-### ⚠ This zip carries three LOCAL PATCHES — do not re-download without re-applying
+### ⚠ This zip carries four LOCAL PATCHES — do not re-download without re-applying
 
 1. **Recipe format fix** (`data/lucky/recipe/lucky_block.json`): upstream uses the
    pre-1.21.5 `{"item": "..."}` key format which 1.21.5 rejects ("Couldn't parse data
@@ -39,6 +39,14 @@ delivers it to server and clients alike. The 0.2.1+1.21.4 build covers MC 1.21.4
    requires item model definitions in `assets/<ns>/items/`; the addon only ships the old
    `models/item/` file, so the item icon rendered as the magenta/black missing texture.
    Added `{"model": {"type": "minecraft:model", "model": "lucky:block/lucky_block"}}`.
+
+4. **Text components converted from JSON strings to native structures** (8 outcome files:
+   baby_player, bob, ghostly_horseman, jokes, llamas, lucky_mobs, mr_rainbows,
+   romantic_rose): 1.21.5 stopped parsing JSON-string text in entity NBT (`CustomName`,
+   book `pages`, etc.) — names rendered literally as `('text':'Baby Datakin')`. Every
+   string value that was embedded JSON is now the parsed structure. Transform script +
+   structural verifier: scratchpad `fix-text-components-v2.ps1` (careful: PowerShell
+   unwraps single-element arrays — v1 corrupted `HandItems`-style lists; always verify).
 
 All patches are separate commits in this repo's git history. Before updating the addon,
 check whether upstream fixed both; otherwise re-apply (edit JSON inside the zip, then
