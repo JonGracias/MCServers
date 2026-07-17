@@ -1,0 +1,13 @@
+name = "Effortless Building"
+filename = "effortlessbuilding-4.1+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DYtfQEYj/versions/WFfB60HD/effortlessbuilding-4.1%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "7a718e23cc699901d450ce58eea415e7960b6354b1e5f91ba72dfe464f13a555cdfc0ed4baff6f952369022ebb4e280f1b323bf51c2f785723a1a065fe0883c6"
+
+[update]
+[update.modrinth]
+mod-id = "DYtfQEYj"
+version = "WFfB60HD"

@@ -1,0 +1,11 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "61e1952dd95f871841391eed780dc6252d4f60e4b7afa13e0fbab74957ed6add"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "2f5c506d2812eadb4cd6ce2286dc2aafe8a21046d2c1f584a75ca90ea5bd3eeb"
+metafile = true
