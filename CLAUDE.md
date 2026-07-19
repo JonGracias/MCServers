@@ -83,8 +83,8 @@ read it as a shortcut but should still trust the checks above over the file.
    ```
    For the `lucky-blocks` pack, create BOTH tiles: **"Lucky Blocks"** (auto-join
    `10.0.0.172:25565`) and **"Lucky Block PVP"** (auto-join `10.0.0.172:25566`).
-   For the `better-build` pack, create one tile: **"Better Build"** (auto-join
-   `10.0.0.172:25567`).
+   For the `better-build` pack, create BOTH tiles: **"Better Build"** (auto-join
+   `10.0.0.172:25567`) and **"Better Build Flat"** (auto-join `10.0.0.172:25568`).
    They share the pack, so mods stay identical; each keeps its own settings and
    ReplayMod recordings. If one instance already exists, copy its `.minecraft\options.txt`
    into the new one so the user's keybinds/settings carry over.
@@ -96,13 +96,14 @@ read it as a shortcut but should still trust the checks above over the file.
 ## Joining Jon's servers
 
 Jon's laptop hosts on `10.0.0.172` (home Wi-Fi, DHCP — if unreachable, ask Jon to
-re-check his IP and that the server is running). Three servers, two packs:
+re-check his IP and that the server is running). Four servers, two packs:
 
 | Server | Address | Pack | What it is |
 |---|---|---|---|
 | Lucky Blocks (Survival) | `10.0.0.172:25565` | `lucky-blocks` | survival world with lucky blocks |
 | Lucky Block PVP Arena | `10.0.0.172:25566` | `lucky-blocks` | Lucky Block Walls arena: open your team's wall of lucky blocks for gear, fight in the middle |
 | Better Build (Survival) | `10.0.0.172:25567` | `better-build` | near-vanilla survival with Effortless Building (mirrors, arrays, build modes) |
+| Better Build Flat (Creative) | `10.0.0.172:25568` | `better-build` | superflat creative building world: frozen time/weather, no mobs, no villages — pure building |
 
 - The user's username must be whitelisted (per server) first — rule 1 covers collecting it.
 - Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in
