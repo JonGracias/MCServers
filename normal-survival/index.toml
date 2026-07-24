@@ -1,0 +1,41 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/deimos.pw.toml"
+hash = "931e10fdcc8cfa4baaab6f6c51daf5cdfb69e7c0ef2a89188f89d3e54bc9b00e"
+metafile = true
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "2b09cd091db013e06c690b83c3985f1ece7cc22d946279812a0f42a28193f825"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
+metafile = true
+
+[[files]]
+file = "mods/floodgate.pw.toml"
+hash = "02778469a6a4cbb1f21ccbeeed79589b1ee96c23ffecf624e17c920413158dd9"
+metafile = true
+
+[[files]]
+file = "mods/replaymod.pw.toml"
+hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
+metafile = true
+
+[[files]]
+file = "mods/server-side-horror.pw.toml"
+hash = "c602453ab365842d305a54f70b1e749b1e5ec8787d7babd67cc2080f06814430"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "f675fb68db6493e26d25e860443249d2f6d681751c53f23cd29d4a4a1bbb28b5"
+metafile = true
+
+[[files]]
+file = "mods/viafabric.pw.toml"
+hash = "1fe7867ee6ecd17c0df0f46672c8c9cab6c42398103315777bca485cc3f6c1e4"
+metafile = true

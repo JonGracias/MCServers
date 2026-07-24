@@ -85,6 +85,8 @@ read it as a shortcut but should still trust the checks above over the file.
    `10.0.0.172:25565`) and **"Lucky Block PVP"** (auto-join `10.0.0.172:25566`).
    For the `better-build` pack, create BOTH tiles: **"Better Build"** (auto-join
    `10.0.0.172:25567`) and **"Better Build Flat"** (auto-join `10.0.0.172:25568`).
+   For the `normal-survival` pack, create **"Normal Survival"** (auto-join
+   `10.0.0.172:25569`).
    They share the pack, so mods stay identical; each keeps its own settings and
    ReplayMod recordings. If one instance already exists, copy its `.minecraft\options.txt`
    into the new one so the user's keybinds/settings carry over.
@@ -96,7 +98,7 @@ read it as a shortcut but should still trust the checks above over the file.
 ## Joining Jon's servers
 
 Jon's laptop hosts on `10.0.0.172` (home Wi-Fi, DHCP — if unreachable, ask Jon to
-re-check his IP and that the server is running). Four servers, two packs:
+re-check his IP and that the server is running). Five servers, three packs:
 
 | Server | Address | Pack | What it is |
 |---|---|---|---|
@@ -104,11 +106,12 @@ re-check his IP and that the server is running). Four servers, two packs:
 | Lucky Block PVP Arena | `10.0.0.172:25566` | `lucky-blocks` | Lucky Block Walls arena: open your team's wall of lucky blocks for gear, fight in the middle |
 | Better Build (Survival) | `10.0.0.172:25567` | `better-build` | near-vanilla survival with Effortless Building (mirrors, arrays, build modes) |
 | Better Build Flat (Creative) | `10.0.0.172:25568` | `better-build` | superflat creative building world: frozen time/weather, no mobs, no villages — pure building |
+| Normal Survival | `10.0.0.172:25569` | `normal-survival` | looks like an ordinary survival world; ambient "Herobrine" horror mod runs quietly in the background. Bedrock/phone friends can join too, via a Geyser bridge Jon runs separately on the host |
 
 - The user's username must be whitelisted (per server) first — rule 1 covers collecting it.
 - Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in
-  the `lucky-blocks` pack and work automatically on both its servers. The `better-build`
-  pack has neither — it's near-vanilla.
+  the `lucky-blocks` pack and work automatically on both its servers, and in `normal-survival`.
+  The `better-build` pack has neither — it's near-vanilla.
 
 ## Packs in this repo
 
@@ -116,6 +119,7 @@ re-check his IP and that the server is running). Four servers, two packs:
 |---|---|---|---|
 | `lucky-blocks` | Lucky Blocks + Lucky Block PVP (two instances, one pack) | 1.21.5 / Fabric 0.19.3 | [lucky-blocks/CLAUDE.md](lucky-blocks/CLAUDE.md) |
 | `better-build` | Better Build | 1.21.11 / Fabric 0.19.3 | [better-build/CLAUDE.md](better-build/CLAUDE.md) |
+| `normal-survival` | Normal Survival | 26.1.2 / Fabric 0.19.3 | [normal-survival/CLAUDE.md](normal-survival/CLAUDE.md) |
 
 Adding a new pack (done on Jon's machine): create `<folder>\` with packwiz
 (`packwiz init`), add mods, add a `CLAUDE.md`, extend `.packwizignore` pattern
