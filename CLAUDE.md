@@ -106,7 +106,7 @@ re-check his IP and that the server is running). Five servers, three packs:
 | Lucky Block PVP Arena | `10.0.0.172:25566` | `lucky-blocks` | Lucky Block Walls arena: open your team's wall of lucky blocks for gear, fight in the middle |
 | Better Build (Survival) | `10.0.0.172:25567` | `better-build` | near-vanilla survival with Effortless Building (mirrors, arrays, build modes) |
 | Better Build Flat (Creative) | `10.0.0.172:25568` | `better-build` | superflat creative building world: frozen time/weather, no mobs, no villages — pure building |
-| Normal Survival | `10.0.0.172:25569` | `normal-survival` | looks like an ordinary survival world; ambient "Herobrine" horror mod runs quietly in the background. Bedrock/phone friends can join too, via a Geyser bridge Jon runs separately on the host |
+| Normal Survival | `10.0.0.172:25569` | `normal-survival` | ordinary survival world. Bedrock/phone friends can join too, via a Geyser bridge Jon runs separately on the host |
 
 - The user's username must be whitelisted (per server) first — rule 1 covers collecting it.
 - Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in

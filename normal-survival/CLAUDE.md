@@ -6,10 +6,11 @@ Mojang is on year.month versioning now (current latest is 26.2), and Effortless 
 lags one release behind. General workflow and instance-recreation steps:
 [../../CLAUDE.md](../../CLAUDE.md).
 
-Design goal: looks and plays like a completely normal survival server — until it doesn't.
-Spawn is deliberately unremarkable; the interesting terrain (village, dark forest +
-mansion, pillager outpost, mountains) is nearby but not visible from spawn, and
-Server-Side Horror runs quietly in the background from day one.
+Design goal: a normal survival server. Spawn is deliberately unremarkable; the interesting
+terrain (village, dark forest + mansion, pillager outpost, mountains) is nearby but not
+visible from spawn. It originally shipped with an ambient "Herobrine" horror mod running
+quietly in the background — **that was removed on 2026-08-01 at Jon's request**; see
+"Removed: the Herobrine mod" below before adding anything like it back.
 
 ## Mods (`mods/*.pw.toml`, all from Modrinth)
 
@@ -19,8 +20,6 @@ Server-Side Horror runs quietly in the background from day one.
 | Effortless Building | `effortless-building` | both | building QoL: mirrors, arrays, build modes — works in survival |
 | Simple Voice Chat | `simple-voice-chat` | both | in-game proximity voice |
 | ReplayMod | `replaymod` | client | auto-records every session as tiny .mcpr files |
-| Server-Side Horror | `server-side-horror` | server | the "Herobrine" content — ambient sightings/sounds/tampering, entirely server-side so no client mod is needed to experience it |
-| Deimos | `deimos` | both | hard dependency of Server-Side Horror (packwiz caught this automatically, same pattern as Architectury for Modern Lucky Block in the lucky-blocks pack) |
 | Floodgate | `floodgate` | server | lets Bedrock players join without a linked Java/Xbox account |
 | ViaFabric | `viafabric` | both | protocol bridge — see Bedrock bridge below |
 
@@ -40,13 +39,23 @@ config lets Bedrock players join without owning Java Edition. Geyser Standalone 
 lives in `instances\normal-survival\geyser\` — it's infra, not a packwiz mod, since it
 runs as a separate process alongside the server (see that folder's notes / `start-geyser.ps1`).
 
-## The Herobrine mod
+## Removed: the Herobrine mod
 
-`server-side-horror` ships sane ambient-horror defaults out of the box (occasional
-sightings, footstep/mining sounds when alone, torches going out, one particle jumpscare)
-— chosen deliberately over hand-scripted set-pieces so it needs zero maintenance. Config
-lives in the synced `config/` folder if tuning (frequency/intensity) is ever wanted.
-Entirely server-side — client players need no extra mod to see/hear it.
+`server-side-horror` (ambient sightings, footstep/mining sounds when alone, torches going
+out, fake joiners, random signs and heads) was **removed on 2026-08-01 at Jon's request**,
+along with `deimos`, its only dependent-free hard dependency — nothing else in the pack
+declares it. Both were server-side, so no client change was needed and the existing world
+is unaffected: everything the mod placed was vanilla blocks (signs, heads, torches), which
+survive its removal as ordinary blocks.
+
+The instance's tuning file `instances\normal-survival\config\serversidehorror.json` was
+deliberately left in place — it is inert with the mod gone, and it is the only record of
+the per-event frequencies if the mod is ever re-added. To restore: `packwiz modrinth add
+server-side-horror` in this folder (it pulls Deimos back in), commit, re-sync the server.
+
+This pack's docs, the root `CLAUDE.md`, and `packs\CLAUDE.md` all used to describe the
+horror as the point of this server. They have been updated — if a stale reference turns
+up, the removal is the current state, not a mistake.
 
 ## Seed
 

@@ -1,13 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mods/cloth-config.pw.toml"
-hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
-metafile = true
+file = "CLAUDE.md"
+hash = "9c33b3cefbe934b03acaba13f2664b21cb5f591cba261fd7798dcb348586041c"
 
 [[files]]
-file = "mods/deimos.pw.toml"
-hash = "931e10fdcc8cfa4baaab6f6c51daf5cdfb69e7c0ef2a89188f89d3e54bc9b00e"
+file = "mods/cloth-config.pw.toml"
+hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
 metafile = true
 
 [[files]]
@@ -33,11 +32,6 @@ metafile = true
 [[files]]
 file = "mods/replaymod.pw.toml"
 hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
-metafile = true
-
-[[files]]
-file = "mods/server-side-horror.pw.toml"
-hash = "c602453ab365842d305a54f70b1e749b1e5ec8787d7babd67cc2080f06814430"
 metafile = true
 
 [[files]]
