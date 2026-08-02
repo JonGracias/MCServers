@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CLAUDE.md"
-hash = "9c33b3cefbe934b03acaba13f2664b21cb5f591cba261fd7798dcb348586041c"
+hash = "c981348f61344539b1a219e8b0cee7d2eccae6d6a69856feac4518f0b36b9220"
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
