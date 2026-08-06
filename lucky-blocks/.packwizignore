@@ -1,5 +1,0 @@
-# Files that are part of the repo but must NOT be installed to clients/servers
-CLAUDE.md
-SETUP.md
-.packwizignore
-.gitattributes
