@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Play Normal Survival</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3.5rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.9rem; margin-bottom: .2rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  ol { padding-left: 1.2rem; }
+  li { margin: .5rem 0; }
+  code, pre { font-family: ui-monospace, Consolas, monospace; }
+  pre { background: rgba(128,128,128,.14); padding: .9rem 1rem; border-radius: .5rem; overflow-x: auto;
+        font-size: .88rem; }
+  .go { display: inline-block; font: 600 1.15rem/1 system-ui, sans-serif; text-decoration: none;
+        padding: 1rem 2rem; border-radius: .6rem; background: #2f8f4e; color: #fff; margin: .4rem 0 .6rem; }
+  .go:hover { background: #27793f; }
+  .note { background: rgba(128,128,128,.12); border-left: 3px solid rgba(128,128,128,.45);
+          padding: .8rem 1rem; border-radius: .3rem; font-size: .94rem; }
+  details { margin-top: 2.5rem; }
+  summary { cursor: pointer; opacity: .8; }
+  button { font: inherit; padding: .45rem 1rem; border-radius: .4rem; border: 1px solid rgba(128,128,128,.5);
+           background: transparent; color: inherit; cursor: pointer; }
+  .fine { opacity: .7; font-size: .9rem; margin-top: 2.5rem; }
+</style>
+
+<h1>Play Normal Survival</h1>
+<p class="sub">Minecraft 26.1.2 &middot; Fabric &middot; about a minute, then you are in</p>
+
+<p><a class="go" href="install.bat" download>Download the installer</a></p>
+
+<p>Download it, then <b>double-click the file</b>. It installs Prism Launcher if you do not
+have it, sets up the modpack, and points it at the server. Nothing else to configure.</p>
+
+<div class="note">
+<b>Windows will warn you.</b> It does this for every downloaded installer that is not
+code-signed. Your browser may say the file is unusual - choose <b>Keep</b>. Windows may then
+show <i>"Windows protected your PC"</i> - choose <b>More info</b>, then <b>Run anyway</b>.
+</div>
+
+<p>When it finishes, open Prism Launcher, sign in to your Microsoft account, and press
+<b>Play</b> on <b>Normal Survival</b>. The first launch downloads the mods and connects you
+automatically. Every later launch re-checks the pack, so you always have the same mods as
+everyone else.</p>
+
+<details>
+  <summary>Rather not download anything? Use one line instead.</summary>
+  <p style="margin-top:1rem">Press <b>Windows + X</b>, choose <b>Terminal</b>, paste this and
+  press Enter. It does exactly the same thing, and because nothing is saved to disk there is
+  no warning to click through.</p>
+  <pre><code id="cmd">irm https://jongracias.github.io/MCServers/install.ps1 | iex</code></pre>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('cmd').textContent);this.textContent='Copied'">Copy</button>
+</details>
+
+<p class="fine">You need to own Minecraft: Java Edition. Server address, if you ever need it by
+hand: <code>survival.datakiin.com</code></p>
