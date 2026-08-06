@@ -43,7 +43,7 @@ read it as a shortcut but should still trust the checks above over the file.
 1. **Prism Launcher**: `winget install PrismLauncher.PrismLauncher --silent --accept-package-agreements --accept-source-agreements`
 
 2. **Instance folder**: `%APPDATA%\PrismLauncher\instances\<PackName>\` (use the pack's
-   display name, e.g. "Lucky Blocks" for `lucky-blocks`). Two files:
+   display name, e.g. "Normal Survival" for `normal-survival`). Two files:
 
    `mmc-pack.json` — versions come from the pack's `pack.toml` `[versions]` section:
    ```json
@@ -74,22 +74,20 @@ read it as a shortcut but should still trust the checks above over the file.
 4. **If Prism was open during any of this**: user must fully quit and reopen Prism
    (it caches instance configs in memory and writes stale ones back).
 
-5. **Auto-join instances (optional but recommended).** A pack can have multiple tiles,
-   one per server, that connect automatically on launch. Create an additional instance
-   folder (e.g. "Lucky Block PVP") exactly as above, plus two lines in `instance.cfg`:
+5. **Auto-join (recommended when the pack has a server).** Two extra lines in
+   `instance.cfg` make the tile connect the moment the game loads:
    ```ini
    JoinServerOnLaunch=true
-   JoinServerOnLaunchAddress=10.0.0.172:25566
+   JoinServerOnLaunchAddress=10.0.0.172:25569
    ```
-   For the `lucky-blocks` pack, create BOTH tiles: **"Lucky Blocks"** (auto-join
-   `10.0.0.172:25565`) and **"Lucky Block PVP"** (auto-join `10.0.0.172:25566`).
-   For the `better-build` pack, create BOTH tiles: **"Better Build"** (auto-join
-   `10.0.0.172:25567`) and **"Better Build Flat"** (auto-join `10.0.0.172:25568`).
-   For the `normal-survival` pack, create **"Normal Survival"** (auto-join
-   `10.0.0.172:25569`).
-   They share the pack, so mods stay identical; each keeps its own settings and
-   ReplayMod recordings. If one instance already exists, copy its `.minecraft\options.txt`
-   into the new one so the user's keybinds/settings carry over.
+   **Today only `normal-survival` has a server** — create **"Normal Survival"** with the
+   address above. The other two packs are installable and playable, but there is nothing
+   to auto-join, so leave both lines out (see "Joining Jon's servers" below).
+
+   A pack can carry several tiles, one per server, when there is more than one. They share
+   the pack, so mods stay identical; each keeps its own settings and ReplayMod recordings.
+   If one instance already exists, copy its `.minecraft\options.txt` into the new one so the
+   user's keybinds/settings carry over.
 
 6. **Done.** User presses Play → pre-launch hook downloads all mods from the local clone.
    Tell the user: after Jon announces any pack change, run `git -C C:\MCServers pull`
@@ -97,29 +95,27 @@ read it as a shortcut but should still trust the checks above over the file.
 
 ## Joining Jon's servers
 
-Jon's laptop hosts on `10.0.0.172` (home Wi-Fi, DHCP — if unreachable, ask Jon to
-re-check his IP and that the server is running). Five servers, three packs:
+Jon's PC hosts on `10.0.0.172` (home Wi-Fi, DHCP — if unreachable, ask Jon to
+re-check his IP and that the server is running). **One server:**
 
 | Server | Address | Pack | What it is |
 |---|---|---|---|
-| Lucky Blocks (Survival) | `10.0.0.172:25565` | `lucky-blocks` | survival world with lucky blocks |
-| Lucky Block PVP Arena | `10.0.0.172:25566` | `lucky-blocks` | Lucky Block Walls arena: open your team's wall of lucky blocks for gear, fight in the middle |
-| Better Build (Survival) | `10.0.0.172:25567` | `better-build` | near-vanilla survival with Effortless Building (mirrors, arrays, build modes) |
-| Better Build Flat (Creative) | `10.0.0.172:25568` | `better-build` | superflat creative building world: frozen time/weather, no mobs, no villages — pure building |
 | Normal Survival | `10.0.0.172:25569` | `normal-survival` | ordinary survival world. Bedrock/phone friends can join too, via a Geyser bridge Jon runs separately on the host |
 
-- The user's username must be whitelisted (per server) first — rule 1 covers collecting it.
-- Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in
-  the `lucky-blocks` pack and work automatically on both its servers, and in `normal-survival`.
-  The `better-build` pack has neither — it's near-vanilla.
+- The user's username must be whitelisted first — rule 1 covers collecting it.
+- Voice chat (proximity, press V) and ReplayMod (auto-records, red dot top-left) are in the
+  `normal-survival` pack and work automatically.
+
+**If you find an older copy of this file mentioning Lucky Blocks, Lucky Block PVP, Better
+Build or Better Build Flat, it is out of date.** Those four servers were deleted 2026-08-05
+and both their packs were removed from this repo on 2026-08-06 — there is nothing to install
+and nothing to connect to. Do not build tiles for them.
 
 ## Packs in this repo
 
-| Folder | Display name(s) | MC / loader | Docs |
-|---|---|---|---|
-| `lucky-blocks` | Lucky Blocks + Lucky Block PVP (two instances, one pack) | 1.21.5 / Fabric 0.19.3 | [lucky-blocks/CLAUDE.md](lucky-blocks/CLAUDE.md) |
-| `better-build` | Better Build | 1.21.11 / Fabric 0.19.3 | [better-build/CLAUDE.md](better-build/CLAUDE.md) |
-| `normal-survival` | Normal Survival | 26.1.2 / Fabric 0.19.3 | [normal-survival/CLAUDE.md](normal-survival/CLAUDE.md) |
+| Folder | Display name | MC / loader | Server? | Docs |
+|---|---|---|---|---|
+| `normal-survival` | Normal Survival | 26.1.2 / Fabric 0.19.3 | yes, `:25569` | [normal-survival/CLAUDE.md](normal-survival/CLAUDE.md) |
 
 Adding a new pack (done on Jon's machine): create `<folder>\` with packwiz
 (`packwiz init`), add mods, add a `CLAUDE.md`, extend `.packwizignore` pattern
