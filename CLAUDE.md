@@ -116,6 +116,12 @@ and nothing to connect to. Do not build tiles for them.
 | Folder | Display name | MC / loader | Server? | Docs |
 |---|---|---|---|---|
 | `normal-survival` | Normal Survival | 26.1.2 / Fabric 0.19.3 | yes, `:25569` | [normal-survival/CLAUDE.md](normal-survival/CLAUDE.md) |
+| `one-block` | One Block | 26.1.2 / Fabric 0.19.3 | local only so far | [one-block/CLAUDE.md](one-block/CLAUDE.md) |
+
+**One Block has no public address yet.** The pack installs and the Prism tile works, but the
+server runs on Jon's box on 25565, which is not forwarded on the gateway and has no DNS name -
+so its installer deliberately ships **without** an auto-join line rather than baking in an
+address that would fail. Do not add `JoinServerOnLaunch` for it until that changes.
 
 Adding a new pack (done on Jon's machine): create `<folder>\` with packwiz
 (`packwiz init`), add mods, add a `CLAUDE.md`, extend `.packwizignore` pattern

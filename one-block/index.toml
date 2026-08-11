@@ -1,0 +1,26 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "a5efdd482cdc2674e44462b98a1a13a371ccdec980da4b13b919e44ba23125ec"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
+metafile = true
+
+[[files]]
+file = "mods/replaymod.pw.toml"
+hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "27f525160243b25cadc2e7202f663ed1da1638204ba80c8ce9f651ed10ba7fb1"
+metafile = true
+
+[[files]]
+file = "mods/simply-oneblock.pw.toml"
+hash = "d20380f72b2c5df4f09cceb7cc1ff75abca808b17946b376c2948e75bab7e967"
+metafile = true

@@ -1,0 +1,13 @@
+name = "One Block"
+author = "Jon"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "37cb32902bd6f7f67e475cf4bba4f686eac30aa4a25ac921679f3856bfebf2f1"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "26.1.2"

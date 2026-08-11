@@ -1,0 +1,13 @@
+name = "Simply OneBlock (26.2 Sulfur Caves Included)"
+filename = "simply_oneblock_26.1-26.1.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/AERXRGP7/versions/PdTi5ju9/simply_oneblock_26.1-26.1.2.jar"
+hash-format = "sha512"
+hash = "6e3eeb8de5abb8b7c20aa5811547f183aa4cc71bc36f646c4fbbac57566e72d2b58f18b4c834aa9a8acd18d4256f58b3e9c5f9c1e76e046c635eb7bb2e4cfdc0"
+
+[update]
+[update.modrinth]
+mod-id = "AERXRGP7"
+version = "PdTi5ju9"
