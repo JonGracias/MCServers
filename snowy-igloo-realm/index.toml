@@ -1,0 +1,51 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
+metafile = true
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "2b09cd091db013e06c690b83c3985f1ece7cc22d946279812a0f42a28193f825"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
+metafile = true
+
+[[files]]
+file = "mods/fish-of-thieves.pw.toml"
+hash = "16a2ce6625996c55c3759479b2a8c82a8f3af684d5fc57763576d06cd0832c7a"
+metafile = true
+
+[[files]]
+file = "mods/floodgate.pw.toml"
+hash = "02778469a6a4cbb1f21ccbeeed79589b1ee96c23ffecf624e17c920413158dd9"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "ff3b8e19820888b63a129f5c5769a1671bda1e1376de0deb216c6862f0feca2d"
+metafile = true
+
+[[files]]
+file = "mods/replaymod.pw.toml"
+hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "f675fb68db6493e26d25e860443249d2f6d681751c53f23cd29d4a4a1bbb28b5"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "c75f5e9a285cf6195065ba85e73081990f990de6efc7e2262a6eafe12d3dc277"
+metafile = true
+
+[[files]]
+file = "mods/viafabric.pw.toml"
+hash = "1fe7867ee6ecd17c0df0f46672c8c9cab6c42398103315777bca485cc3f6c1e4"
+metafile = true
