@@ -1,0 +1,31 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "a5efdd482cdc2674e44462b98a1a13a371ccdec980da4b13b919e44ba23125ec"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
+metafile = true
+
+[[files]]
+file = "mods/mob-battle-mod.pw.toml"
+hash = "e1ec854fe430c70f7e5e9e03168a5bd636876bc6fcc3adc57401bff0dd662b06"
+metafile = true
+
+[[files]]
+file = "mods/replaymod.pw.toml"
+hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "27f525160243b25cadc2e7202f663ed1da1638204ba80c8ce9f651ed10ba7fb1"
+metafile = true
+
+[[files]]
+file = "mods/worldedit.pw.toml"
+hash = "94a06a8b641497c208276d75762db8e34bf01837a3e89c5bdc19e4cb9c93f16e"
+metafile = true

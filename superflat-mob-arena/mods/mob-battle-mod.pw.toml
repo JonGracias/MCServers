@@ -1,0 +1,13 @@
+name = "Mob Battle Mod"
+filename = "mobbattle-26.1.2-2.8.0-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LbrJcAlI/versions/hPB6p0Bj/mobbattle-26.1.2-2.8.0-fabric.jar"
+hash-format = "sha512"
+hash = "e456fd5ed76caa2f6c97d2d4c8443b5c57ee755615f50054c40fa176e5cc30176f0077d241c0736bfcb2696eda6d0d0cebcfd352f620ede6a034164fb358baa0"
+
+[update]
+[update.modrinth]
+mod-id = "LbrJcAlI"
+version = "hPB6p0Bj"
