@@ -1,0 +1,13 @@
+name = "Superflat"
+author = "mcgen"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c18f9dc5d81a07eec03144bdf87ed8207eee761fd36418b34102a2585142870a"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "26.2"
