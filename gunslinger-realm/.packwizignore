@@ -1,0 +1,4 @@
+# Files that are part of the repo but must NOT be installed to clients or servers.
+README.md
+CLAUDE.md
+.packwizignore

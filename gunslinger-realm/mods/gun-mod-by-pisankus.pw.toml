@@ -1,0 +1,13 @@
+name = "Gun mod by pisankus"
+filename = "basic-gun-mod-mc26.1-26.2-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jySA12JP/versions/EDDfZxHt/basic-gun-mod-mc26.1-26.2-2.0.0.jar"
+hash-format = "sha512"
+hash = "7e41bdafabbf2cf247c84357f621390abba632410c01157ace3bd989f86ee239c6fbe911f69bdf738d7af8a50446053bea9d9a87f2e9f779991581a0232fb560"
+
+[update]
+[update.modrinth]
+mod-id = "jySA12JP"
+version = "EDDfZxHt"
