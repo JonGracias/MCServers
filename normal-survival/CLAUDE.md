@@ -73,7 +73,7 @@ versions). Distances from spawn (0,0) on this seed:
 | Jagged Peaks mountains | 0 blocks | spawn itself sits at the foot of them |
 | Village (plains) | 481 blocks | |
 
-Re-verify after any worldgen-affecting update: `tools\rcon.ps1 -Port 25578 -PasswordFile
-instances\normal-survival\rcon-password.txt -Commands 'locate structure minecraft:mansion', ...`
+Re-verify after any worldgen-affecting update:
+`mcpy rcon normal-survival 'locate structure minecraft:mansion'` (and so on)
 (see root `CLAUDE.md` for the full command list used). To try a different seed:
-`tools\mcserver.ps1 seed normal-survival <seed>` (backs up the old world first).
+`mcpy seed normal-survival <seed>` (backs up the old world first).
