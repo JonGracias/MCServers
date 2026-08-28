@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "dad964fac38e7ed462500d843108158182b98d3556a91f2658b861881c977754"
+metafile = true
+
+[[files]]
 file = "mods/fabric-api.pw.toml"
 hash = "4ba63364cb1e50db83c7f29144d2c74cee7159d2c3795ac6df267a927ed93198"
 metafile = true
