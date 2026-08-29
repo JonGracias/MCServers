@@ -1,0 +1,13 @@
+name = "Giant World"
+author = "mcpy"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "0296395fa50d802f83c59f03f888fcd923b768a3116cbb910ae4d98087d99440"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "26.2"

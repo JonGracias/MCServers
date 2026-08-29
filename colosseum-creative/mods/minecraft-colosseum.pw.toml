@@ -1,0 +1,13 @@
+name = "Minecraft Colosseum"
+filename = "Minecraft_Colosseum-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BnyUWHBq/versions/taO3El65/Minecraft_Colosseum-1.0.0.jar"
+hash-format = "sha512"
+hash = "5f0b23d26e32ff3bb5bf990a21c930304ab58d3aa8edf7e75f21da9a62aeef6b690be441fbcb5484202c1ff74d6da8aeb9db140ae69d31c8e8961a634ffa4ed0"
+
+[update]
+[update.modrinth]
+mod-id = "BnyUWHBq"
+version = "taO3El65"

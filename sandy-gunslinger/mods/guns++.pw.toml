@@ -1,0 +1,13 @@
+name = "Guns ++"
+filename = "guns++-5.9.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kdch0Jxf/versions/ojgoWSyN/guns%2B%2B-5.9.5.jar"
+hash-format = "sha512"
+hash = "c7646fc0c0ff0ba9ca434697e584dc3ed90d8f2c698bd4bb5db6341ce47a4bf7eb2365299e2f3041be24cbd82602a5c000f50486cbacc7780d1c8c5568230ff7"
+
+[update]
+[update.modrinth]
+mod-id = "kdch0Jxf"
+version = "ojgoWSyN"

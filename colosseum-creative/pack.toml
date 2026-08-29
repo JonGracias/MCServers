@@ -1,0 +1,13 @@
+name = "Colosseum Creative"
+author = "mcpy"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "7e865075fd8591a9738037dc3730f6293cc0dc1541ac6e457903240da18e7adb"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "1.19.2"
