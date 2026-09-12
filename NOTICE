@@ -1,0 +1,37 @@
+MCServers — packwiz modpacks and the installer that sets them up
+Copyright (C) 2026 Jon Gracias
+
+This repository is licensed under the GNU Affero General Public License v3.0.
+See LICENSE for the full text.
+
+WHAT THE LICENSE COVERS
+-----------------------
+
+The AGPL covers the work that is actually ours:
+
+  - the installer and the scripts under docs/ that drive PrismLauncher,
+  - the pack definitions — pack.toml, index.toml, and the per-pack
+    configuration and layout choices,
+  - the documentation and install pages.
+
+WHAT IT DOES NOT COVER
+----------------------
+
+**No mod code is redistributed here.** The files under each pack's mods/
+directory are packwiz metafiles (*.pw.toml): a mod's name, its filename, and
+a URL and checksum pointing at the copy hosted on Modrinth. They are
+references, not copies. Nothing in this repository contains a mod binary, and
+cloning it downloads no mod code.
+
+When packwiz installs a pack it fetches each mod from its own distributor at
+install time. Every one of those mods is the work of its own authors and is
+governed by its own license — which varies mod by mod, and several of which
+are more restrictive than this one. Our license grant cannot and does not
+extend to them. If you redistribute a pack, or host it as a service, you are
+responsible for confirming that each referenced mod's license permits what you
+intend.
+
+Minecraft is a trademark of Mojang Studios. This project is not affiliated
+with, endorsed by, or sponsored by Mojang Studios or Microsoft. Running a
+Minecraft server means accepting Mojang's EULA yourself:
+https://aka.ms/MinecraftEULA
