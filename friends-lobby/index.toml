@@ -1,0 +1,11 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
+metafile = true
+
+[[files]]
+file = "mods/viafabric.pw.toml"
+hash = "1fe7867ee6ecd17c0df0f46672c8c9cab6c42398103315777bca485cc3f6c1e4"
+metafile = true
