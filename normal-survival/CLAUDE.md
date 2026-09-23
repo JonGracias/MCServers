@@ -22,6 +22,9 @@ quietly in the background — **that was removed on 2026-08-01 at Jon's request*
 | ReplayMod | `replaymod` | client | auto-records every session as tiny .mcpr files |
 | Floodgate | `floodgate` | server | lets Bedrock players join without a linked Java/Xbox account |
 | ViaFabric | `viafabric` | both | protocol bridge — see Bedrock bridge below |
+| Farmer's Delight Refabricated | `farmers-delight-refabricated` | both | cooking: pot, skillet, cutting board, new crops and ~50 meals. Added 2026-09-22 for hardcore-outpost |
+| More Delight | `more-delight` | both | extra meals and ingredients on top of Farmer's Delight |
+| Delight Lib | `delight-lib` | both | required by More Delight |
 
 ## Bedrock bridge (Geyser)
 
