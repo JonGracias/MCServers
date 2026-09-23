@@ -25,6 +25,12 @@ quietly in the background — **that was removed on 2026-08-01 at Jon's request*
 | Farmer's Delight Refabricated | `farmers-delight-refabricated` | both | cooking: pot, skillet, cutting board, new crops and ~50 meals. Added 2026-09-22 for hardcore-outpost |
 | More Delight | `more-delight` | both | extra meals and ingredients on top of Farmer's Delight |
 | Delight Lib | `delight-lib` | both | required by More Delight |
+| Rustic Delight | `rustic-delight` | both | Farmer's Delight add-on: pancakes, coffee, cotton, bell peppers. Added 2026-09-23 for hardcore-outpost |
+| Ube's Delight | `ubes-delight` | both | Farmer's Delight add-on: Filipino crops and dishes. Added 2026-09-23 |
+| 3D Placeable Food | `3d-placeable-food` | both | new cakes, pizzas, bowl foods; vanilla meals placeable as blocks. Added 2026-09-23 |
+| AppleSkin | `appleskin` | both | hunger/saturation HUD - matters on a one-life world. Added 2026-09-23 |
+| Fish of Thieves | `fish-of-thieves` | both | Sea of Thieves fish variants |
+| Cloth Config | `cloth-config` | both | config library, pulled in as a dependency |
 
 ## Bedrock bridge (Geyser)
 

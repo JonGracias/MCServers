@@ -1,6 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/3d-placeable-food.pw.toml"
+hash = "5ddf30147b1362e288658817d9abd3b1069a6ebfb79185b575926befacf6d205"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "785e74169e884a0535517140796a8448a831abf7f7dfa29cf6326b178c0dcf48"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
 metafile = true
@@ -46,8 +56,18 @@ hash = "35768a59b3596fc84f0bf483f523132ae7e9245b3e663197cdd3bdf6d2d91ad5"
 metafile = true
 
 [[files]]
+file = "mods/rustic-delight.pw.toml"
+hash = "669c60e03a667d463218a342be1e1772f402c8e05673485e48f4e1586de571f7"
+metafile = true
+
+[[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "f675fb68db6493e26d25e860443249d2f6d681751c53f23cd29d4a4a1bbb28b5"
+metafile = true
+
+[[files]]
+file = "mods/ubes-delight.pw.toml"
+hash = "fccb50e4ba2c1cb2de4c7c746cc5352639006ae8ee1435ccc68a6f464b60131f"
 metafile = true
 
 [[files]]
