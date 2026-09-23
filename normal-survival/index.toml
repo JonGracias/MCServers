@@ -6,6 +6,11 @@ hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
 metafile = true
 
 [[files]]
+file = "mods/delight-lib.pw.toml"
+hash = "cf9ce07f6592c8672f96466f6bee6a47d459979b6a79194ed29f3dcc364abcbf"
+metafile = true
+
+[[files]]
 file = "mods/effortless-building.pw.toml"
 hash = "2b09cd091db013e06c690b83c3985f1ece7cc22d946279812a0f42a28193f825"
 metafile = true
@@ -16,6 +21,11 @@ hash = "fed9bdaac0173f3cab2692f538441afda1e2cd46c6f6363790b424c009e34e03"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight-refabricated.pw.toml"
+hash = "6683b35e917dea76f7b2ab8338044c576c803dd4f416bb77735e38afc8097c5a"
+metafile = true
+
+[[files]]
 file = "mods/fish-of-thieves.pw.toml"
 hash = "16a2ce6625996c55c3759479b2a8c82a8f3af684d5fc57763576d06cd0832c7a"
 metafile = true
@@ -23,6 +33,11 @@ metafile = true
 [[files]]
 file = "mods/floodgate.pw.toml"
 hash = "02778469a6a4cbb1f21ccbeeed79589b1ee96c23ffecf624e17c920413158dd9"
+metafile = true
+
+[[files]]
+file = "mods/more-delight.pw.toml"
+hash = "f8dae1c48694cad725893b26223272b1fbfddacbe522cddcee850cdec6a70a43"
 metafile = true
 
 [[files]]
