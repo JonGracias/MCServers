@@ -1,0 +1,4 @@
+# packwiz verifies these files by sha256 of their raw bytes.
+# Any newline conversion changes the bytes and breaks the hash, which surfaces
+# in the client as "Your index file hash is invalid!". Never translate them.
+*.toml -text
